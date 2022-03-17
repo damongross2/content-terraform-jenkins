@@ -4,55 +4,49 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>3.17</version>
+    <version>4.19</version>
   </parent>
   
   <artifactId>pubsub-light</artifactId>
-  <version>1.13</version>
+  <version>1.16</version>
   <packaging>hpi</packaging>
 
   <name>Jenkins Pub-Sub "light" Bus</name>
   <description>A simple Publish-Subscribe light-weight event bus for Jenkins</description>
-  <url>https://wiki.jenkins-ci.org/display/JENKINS/PubSub+Light+Plugin</url>
+  <url>https://github.com/jenkinsci/pubsub-light-plugin</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.level>8</java.level>
-    <jenkins.version>2.121.1</jenkins.version>
+    <jenkins.version>2.270</jenkins.version>
   </properties>
 
   <scm>
     <connection>scm:git:git://github.com/jenkinsci/pubsub-light-module.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/pubsub-light-module.git</developerConnection>
     <url>https://github.com/jenkinsci/pubsub-light-module</url>
-    <tag>pubsub-light-1.13</tag>
+    <tag>pubsub-light-1.16</tag>
   </scm>
 
   <repositories>
     <repository>
       <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <url>https://repo.jenkins-ci.org/public/</url>
     </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
       <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <url>https://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
 
   <dependencies>
 
     <dependency>
-      <groupId>org.jenkins-ci.main</groupId>
-      <artifactId>jenkins-core</artifactId>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
       <groupId>org.jenkins-ci.modules</groupId>
       <artifactId>instance-identity</artifactId>
-      <version>2.1</version>
+      <version>2.2</version>
       <scope>provided</scope>
     </dependency>
     
@@ -60,13 +54,13 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>matrix-auth</artifactId>
-      <version>1.0.2</version>
+      <version>2.6.7</version>
       <scope>test</scope>
     </dependency>
     
@@ -82,7 +76,6 @@
           <artifactId>maven-hpi-plugin</artifactId>
           <extensions>true</extensions>
           <configuration>
-            <showDeprecation>true</showDeprecation>
             <contextPath>/jenkins</contextPath>
             <!-- TODO specify ${java.level} when JENKINS-20679 implemented -->
             <disabledTestInjection>true</disabledTestInjection>

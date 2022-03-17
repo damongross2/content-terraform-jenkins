@@ -2,26 +2,30 @@ Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
 Built-By: olamy
-Build-Jdk: 1.8.0_222
+Build-Jdk: 11.0.14.1
 Extension-Name: blueocean-jira
 Specification-Title: The Jenkins Plugins Parent POM Project
 Implementation-Title: blueocean-jira
-Implementation-Version: 1.22.0
+Implementation-Version: 1.25.3
 Group-Id: io.jenkins.blueocean
 Short-Name: blueocean-jira
 Long-Name: JIRA Integration for Blue Ocean
 Url: https://github.com/jenkinsci/blueocean-plugin/blob/master/blueoce
  an/doc/BlueOcean.adoc
 Minimum-Java-Version: 1.8
-Plugin-Version: 1.22.0
-Hudson-Version: 2.138.4
-Jenkins-Version: 2.138.4
-Plugin-Dependencies: blueocean-rest:1.22.0,apache-httpcomponents-clien
- t-4-api:4.5.5-3.0,jackson2-api:2.9.8,jira:3.0.5
+Plugin-Version: 1.25.3
+Hudson-Version: 2.277.4
+Jenkins-Version: 2.277.4
+Plugin-Dependencies: blueocean-rest:1.25.3,apache-httpcomponents-clien
+ t-4-api:4.5.13-1.0,jackson2-api:2.13.0-230.v59243c64b0a5,jira:3.0.14
 Plugin-Developers: Thorsten Iberian Sumurai:scherler:,Cliff Meyers:cli
  ffmeyers:,Tom Fennelly:tfennelly:,Vivek Pandey:vivek:,Kohsuke:kohsuke
  :,Josh McDonald:sophistifunk:,Ivan Meredith:imeredith:,Michael Neale:
  michaelneale:,Keith Zantow:kzantow:,James Dumay:i386:,Marc:marcesher:
  ,Paul Dragoonis:dragoonis:,Ivan Santos:pragmaticivan:,Peter Dave Hell
  o:PeterDaveHello:,Alexandru Somai:alexsomai:
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/blueocean-plugin/blueocean
+ -jira
 

@@ -1,27 +1,25 @@
 Manifest-Version: 1.0
-Archiver-Version: Plexus Archiver
-Created-By: Apache Maven
-Built-By: fcojfernandez
-Build-Jdk: 1.8.0_242
-Extension-Name: cloudbees-folder
-Specification-Title: This plugin allows users to create "folders" to o
- rganize jobs. Users can define custom taxonomies (like
-     by project type, organization type etc). Folders are nestable and
-  you can define views within folders. Maintained by CloudBees, Inc.
+Hudson-Version: 2.277.1
+Plugin-Dependencies: credentials:2.6.1;resolution:=optional
 Implementation-Title: cloudbees-folder
-Implementation-Version: 6.12
-Group-Id: org.jenkins-ci.plugins
-Short-Name: cloudbees-folder
 Long-Name: Folders Plugin
-Url: https://github.com/jenkinsci/cloudbees-folder-plugin/
-Compatible-Since-Version: 5.2
+Implementation-Version: 6.708.ve61636eb_65a_5
+Group-Id: org.jenkins-ci.plugins
 Minimum-Java-Version: 1.8
-Plugin-Version: 6.12
-Hudson-Version: 2.138.4
-Jenkins-Version: 2.138.4
-Plugin-Dependencies: credentials:2.2.0;resolution:=optional
-Plugin-Developers: 
 Plugin-License-Name: MIT
-Plugin-License-Url: https://opensource.org/licenses/MIT
+Specification-Title: This plugin allows users to create "folders" to o
+ rganize jobs. Users can define custom taxonomies (like   by project t
+ ype, organization type etc). Folders are nestable and you can define 
+ views within folders. Maintained by CloudBees, Inc.
 Plugin-ScmUrl: https://github.com/jenkinsci/cloudbees-folder-plugin
+Plugin-Version: 6.708.ve61636eb_65a_5
+Jenkins-Version: 2.277.1
+Url: https://github.com/jenkinsci/cloudbees-folder-plugin/
+Short-Name: cloudbees-folder
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Compatible-Since-Version: 5.2
+Plugin-Developers: 
+Extension-Name: cloudbees-folder
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.5.1
 

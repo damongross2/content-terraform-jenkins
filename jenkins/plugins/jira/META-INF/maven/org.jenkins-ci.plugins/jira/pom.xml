@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>jira</artifactId>
-  <version>3.0.15</version>
+  <version>3.7</version>
   <packaging>hpi</packaging>
   <name>Jenkins Jira plugin</name>
   <description>Integrates Jenkins to Jira</description>
@@ -30,7 +30,7 @@
   <scm>
     <connection>scm:git:git://github.com/jenkinsci/jira-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/jira-plugin.git</developerConnection>
-    <tag>jira-3.0.15</tag>
+    <tag>jira-3.7</tag>
     <url>https://github.com/jenkinsci/jira-plugin</url>
   </scm>
   <issueManagement>
@@ -51,19 +51,19 @@
     <dependency>
       <groupId>com.atlassian.jira</groupId>
       <artifactId>jira-rest-java-client-api</artifactId>
-      <version>5.2.1</version>
+      <version>5.2.4</version>
       <scope>compile</scope>
       <exclusions>
         <exclusion>
-          <artifactId>guava</artifactId>
           <groupId>com.google.guava</groupId>
+          <artifactId>guava</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>18.0</version>
+      <version>30.1.1-jre</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -75,36 +75,36 @@
     <dependency>
       <groupId>com.atlassian.jira</groupId>
       <artifactId>jira-rest-java-client-core</artifactId>
-      <version>5.2.1</version>
+      <version>5.2.4</version>
       <scope>compile</scope>
       <exclusions>
         <exclusion>
-          <artifactId>guava</artifactId>
           <groupId>com.google.guava</groupId>
+          <artifactId>guava</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>spring-beans</artifactId>
           <groupId>org.springframework</groupId>
+          <artifactId>spring-beans</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>activation</artifactId>
           <groupId>javax.activation</groupId>
+          <artifactId>activation</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>httpmime</artifactId>
           <groupId>org.apache.httpcomponents</groupId>
+          <artifactId>httpmime</artifactId>
         </exclusion>
         <exclusion>
+          <groupId>com.atlassian.httpclient</groupId>
           <artifactId>atlassian-httpclient-plugin</artifactId>
-          <groupId>com.atlassian.httpclient</groupId>
         </exclusion>
         <exclusion>
+          <groupId>com.atlassian.httpclient</groupId>
           <artifactId>atlassian-httpclient-library</artifactId>
-          <groupId>com.atlassian.httpclient</groupId>
         </exclusion>
         <exclusion>
-          <artifactId>*</artifactId>
           <groupId>org.codehaus.jackson</groupId>
+          <artifactId>*</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -117,93 +117,121 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>apache-httpcomponents-client-4-api</artifactId>
-      <version>4.5.10-1.0</version>
+      <version>4.5.13-1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.12.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.11.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-artifact</artifactId>
-      <version>3.5.0</version>
+      <version>3.8.4</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-lang3</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.jenkins.plugins</groupId>
+      <artifactId>caffeine-api</artifactId>
+      <version>2.9.2-29.v717aac953ff3</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>matrix-project</artifactId>
-      <version>1.6</version>
+      <version>1.18</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>mailer</artifactId>
-      <version>1.20</version>
+      <version>1.34</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>jackson2-api</artifactId>
-      <version>2.10.2</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.workflow</groupId>
-      <artifactId>workflow-step-api</artifactId>
-      <version>2.0</version>
-      <scope>compile</scope>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins</groupId>
-      <artifactId>branch-api</artifactId>
-      <version>2.0.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.workflow</groupId>
-      <artifactId>workflow-job</artifactId>
-      <version>2.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins</groupId>
-      <artifactId>p4</artifactId>
-      <version>1.3.8</version>
-      <scope>compile</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>commons-compress</artifactId>
-          <groupId>org.apache.commons</groupId>
-        </exclusion>
-      </exclusions>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
-      <version>3.7</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins</groupId>
-      <artifactId>script-security</artifactId>
-      <version>1.16</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins</groupId>
-      <artifactId>structs</artifactId>
-      <version>1.7</version>
+      <version>2.13.0-230.v59243c64b0a5</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>credentials</artifactId>
-      <version>2.2.1</version>
+      <version>2.6.1</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.workflow</groupId>
+      <artifactId>workflow-step-api</artifactId>
+      <version>2.24</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.jenkins-ci.plugins</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>branch-api</artifactId>
+      <version>2.7.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.workflow</groupId>
+      <artifactId>workflow-job</artifactId>
+      <version>2.41</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>p4</artifactId>
+      <version>1.12.2</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-compress</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.jenkins-ci.plugins</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.main</groupId>
+      <artifactId>jenkins-core</artifactId>
+      <version>2.277.4</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-annotations</artifactId>
-      <version>3.1.12</version>
+      <version>4.4.2</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
@@ -217,46 +245,27 @@
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>animal-sniffer-annotations</artifactId>
-      <version>1.17</version>
+      <version>1.20</version>
       <scope>provided</scope>
       <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.main</groupId>
-      <artifactId>jenkins-core</artifactId>
-      <version>2.176.4</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>1.7.26</version>
-      <scope>compile</scope>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>org.kohsuke</groupId>
-      <artifactId>access-modifier-annotation</artifactId>
-      <version>1.16</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>annotation-indexer</artifactId>
-          <groupId>org.jenkins-ci</groupId>
-        </exclusion>
-      </exclusions>
     </dependency>
     <dependency>
       <groupId>commons-logging</groupId>
       <artifactId>commons-logging</artifactId>
       <version>1.2</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.kohsuke</groupId>
+      <artifactId>access-modifier-annotation</artifactId>
+      <version>1.25</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.jenkins-ci</groupId>
+          <artifactId>annotation-indexer</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
   <repositories>
@@ -289,7 +298,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.5</version>
+        <version>3.20</version>
         <extensions>true</extensions>
       </plugin>
       <plugin>

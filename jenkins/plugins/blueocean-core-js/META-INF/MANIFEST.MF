@@ -2,20 +2,21 @@ Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
 Built-By: olamy
-Build-Jdk: 1.8.0_222
+Build-Jdk: 11.0.14.1
 Extension-Name: blueocean-core-js
 Specification-Title: The Jenkins Plugins Parent POM Project
 Implementation-Title: blueocean-core-js
-Implementation-Version: 1.22.0
+Implementation-Version: 1.25.3
 Group-Id: io.jenkins.blueocean
 Short-Name: blueocean-core-js
 Long-Name: Blue Ocean Core JS
-Url: https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Core+JS
+Url: https://github.com/jenkinsci/blueocean-plugin/blob/master/blueoce
+ an/doc/BlueOcean.adoc
 Minimum-Java-Version: 1.8
-Plugin-Version: 1.22.0
-Hudson-Version: 2.138.4
-Jenkins-Version: 2.138.4
-Plugin-Dependencies: jenkins-design-language:1.22.0
+Plugin-Version: 1.25.3
+Hudson-Version: 2.277.4
+Jenkins-Version: 2.277.4
+Plugin-Dependencies: jenkins-design-language:1.25.3
 Plugin-Developers: Thorsten Iberian Sumurai:scherler:,Cliff Meyers:cli
  ffmeyers:,Tom Fennelly:tfennelly:,Vivek Pandey:vivek:,Kohsuke:kohsuke
  :,Josh McDonald:sophistifunk:,Ivan Meredith:imeredith:,Michael Neale:
@@ -23,4 +24,8 @@ Plugin-Developers: Thorsten Iberian Sumurai:scherler:,Cliff Meyers:cli
  ,Paul Dragoonis:dragoonis:,Ivan Santos:pragmaticivan:,Peter Dave Hell
  o:PeterDaveHello:,Alexandru Somai:alexsomai:
 Support-Dynamic-Loading: true
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/blueocean-plugin/blueocean
+ -core-js
 

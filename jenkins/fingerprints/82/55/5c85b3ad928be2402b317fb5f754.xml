@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-03-17 22:43:59.400 UTC</timestamp>
+  <md5sum>82555c85b3ad928be2402b317fb5f754</md5sum>
+  <fileName>Credential id=JenkinsCreds-192.168.1.69 name=ec2-user (Credentials for Workers)</fileName>
+  <usages/>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@2.3.6">
+      <timestamp>1647557039386</timestamp>
+      <nodeName>192.168.1.69</nodeName>
+      <timestamp0>1647557039386</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

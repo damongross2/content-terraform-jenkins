@@ -1,23 +1,26 @@
 Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
-Built-By: gmogan
-Build-Jdk: 1.8.0_192
+Built-By: olamy
+Build-Jdk: 11.0.14
 Extension-Name: blueocean-autofavorite
 Specification-Title: Automatically favorites multibranch pipeline jobs
   when user is the author
 Implementation-Title: blueocean-autofavorite
-Implementation-Version: 1.2.4
+Implementation-Version: 1.2.5
 Group-Id: org.jenkins-ci.plugins
 Short-Name: blueocean-autofavorite
 Long-Name: Autofavorite for Blue Ocean
-Url: https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Autofavori
- te+Plugin
+Url: https://github.com/jenkinsci/blueocean-autofavorite-plugin
 Minimum-Java-Version: 1.8
-Plugin-Version: 1.2.4
-Hudson-Version: 2.121.1
-Jenkins-Version: 2.121.1
-Plugin-Dependencies: workflow-job:2.32,branch-api:2.0.11,git-client:2.
- 5.0,git:3.6.0,favorite:2.3.1
+Plugin-Version: 1.2.5
+Hudson-Version: 2.176.4
+Jenkins-Version: 2.176.4
+Plugin-Dependencies: workflow-job:2.38,branch-api:2.0.11,git-client:3.
+ 2.1,git:3.6.0,favorite:2.3.2
 Plugin-Developers: James Dumay:jdumay:jdumay@cloudbees.com
+Plugin-License-Name: MIT License
+Plugin-License-Url: http://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/blueocean-autofavorite-plu
+ gin
 
