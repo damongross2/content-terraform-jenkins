@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Jenkins Jira plugin
+Specification-Version: 3.8
+Implementation-Title: Jenkins Jira plugin
+Implementation-Version: 3.8
+Group-Id: org.jenkins-ci.plugins
+Short-Name: jira
+Long-Name: Jenkins Jira plugin
+Url: https://github.com/jenkinsci/jira-plugin
+Plugin-Version: 3.8
+Hudson-Version: 2.346.2
+Jenkins-Version: 2.346.2
+Plugin-Dependencies: caffeine-api:2.9.3-65.v6a_47d0f4d1fe,commons-lang3-
+ api:3.12.0-36.vd97de6465d5b_,jersey2-api:2.36-2,workflow-job:1207.ve619
+ 1ff089f8,workflow-step-api:639.v6eca_cd8c04a_a_;resolution:=optional,ap
+ ache-httpcomponents-client-4-api:4.5.13-138.v4e7d9a_7b_a_e61,branch-api
+ :2.1046.v0ca_37783ecc5,credentials:1139.veb_9579fca_33b_,jackson2-api:2
+ .13.3-285.vc03c0256d517,mailer:435.v79ef3972b_5c7,matrix-project:772.v4
+ 94f19991984,p4:1.13.0;resolution:=optional
+Plugin-Developers: Olivier Lamy:olamy:,Radek Antoniuk:warden:
+Plugin-License-Name: The MIT license
+Plugin-License-Url: https://github.com/jenkinsci/jira-plugin/raw/master/
+ LICENSE.md
+Plugin-ScmUrl: https://github.com/jenkinsci/jira-plugin
+

@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Jersey 2 API
+Specification-Version: 2.38
+Implementation-Title: Jersey 2 API
+Implementation-Version: 2.38-1
+Group-Id: io.jenkins.plugins
+Short-Name: jersey2-api
+Long-Name: Jersey 2 API
+Url: https://github.com/jenkinsci/jersey2-api-plugin
+Plugin-Version: 2.38-1
+Hudson-Version: 2.361.4
+Jenkins-Version: 2.361.4
+Plugin-Dependencies: javax-activation-api:1.2.0-5,jaxb:2.3.7-1;resolutio
+ n:=optional,apache-httpcomponents-client-4-api:4.5.13-138.v4e7d9a_7b_a_
+ e61;resolution:=optional,jackson2-api:2.13.4.20221013-295.v8e29ea_35414
+ 1;resolution:=optional
+Plugin-Developers: 
+Support-Dynamic-Loading: true
+Plugin-License-Name: EPL-2.0
+Plugin-License-Url: https://opensource.org/licenses/EPL-2.0
+Plugin-ScmUrl: https://github.com/jenkinsci/jersey2-api-plugin
+

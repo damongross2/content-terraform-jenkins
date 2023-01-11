@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Blue Ocean
+Specification-Version: 1.27
+Implementation-Title: Blue Ocean
+Implementation-Version: 1.27.0
+Group-Id: io.jenkins.blueocean
+Short-Name: blueocean
+Long-Name: Blue Ocean
+Url: https://github.com/jenkinsci/blueocean-plugin/blob/master/blueocean
+ /doc/BlueOcean.adoc
+Plugin-Version: 1.27.0
+Hudson-Version: 2.361.4
+Jenkins-Version: 2.361.4
+Plugin-Dependencies: blueocean-bitbucket-pipeline:1.27.0,blueocean-commo
+ ns:1.27.0,blueocean-config:1.27.0,blueocean-core-js:1.27.0,blueocean-da
+ shboard:1.27.0,blueocean-events:1.27.0,blueocean-executor-info:1.27.0;r
+ esolution:=optional,blueocean-git-pipeline:1.27.0,blueocean-github-pipe
+ line:1.27.0,blueocean-i18n:1.27.0,blueocean-jwt:1.27.0,blueocean-person
+ alization:1.27.0,blueocean-pipeline-api-impl:1.27.0,blueocean-pipeline-
+ editor:1.27.0,blueocean-rest-impl:1.27.0,blueocean-rest:1.27.0,blueocea
+ n-web:1.27.0,jenkins-design-language:1.27.0,blueocean-display-url:2.4.1
+ ,pipeline-build-step:2.18,pipeline-milestone-step:1.3.2
+Plugin-Developers: Thorsten Iberian Sumurai:scherler:,Cliff Meyers:cliff
+ meyers:,Tom Fennelly:tfennelly:,Vivek Pandey:vivek:,Kohsuke:kohsuke:,Jo
+ sh McDonald:sophistifunk:,Ivan Meredith:imeredith:,Michael Neale:michae
+ lneale:,Keith Zantow:kzantow:,James Dumay:i386:,Marc:marcesher:,Paul Dr
+ agoonis:dragoonis:,Ivan Santos:pragmaticivan:,Peter Dave Hello:PeterDav
+ eHello:,Alexandru Somai:alexsomai:
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/blueocean-plugin
+

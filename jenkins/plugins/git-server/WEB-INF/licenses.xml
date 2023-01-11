@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='git-server' version='99.va_0826a_b_cdfa_d'><l:dependency name='Jenkins Git server Plugin' groupId='org.jenkins-ci.plugins' artifactId='git-server' version='99.va_0826a_b_cdfa_d' url='https://github.com/jenkinsci/git-server-plugin'><l:description>The Jenkins Plugins Parent POM Project</l:description><l:license name='The MIT license' url='https://opensource.org/licenses/MIT'/></l:dependency></l:dependencies>

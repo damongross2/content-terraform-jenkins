@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: MapDB API Plugin
+Specification-Version: 1.0
+Implementation-Title: MapDB API Plugin
+Implementation-Version: 1.0.9-28.vf251ce40855d
+Group-Id: org.jenkins-ci.plugins
+Short-Name: mapdb-api
+Long-Name: MapDB API Plugin
+Url: https://github.com/jenkinsci/mapdb-api-plugin
+Plugin-Version: 1.0.9-28.vf251ce40855d
+Hudson-Version: 2.319.1
+Jenkins-Version: 2.319.1
+Plugin-Developers: Stephen Connolly:stephenc:
+Support-Dynamic-Loading: true
+Plugin-License-Name: The Apache Software License, Version 2.0
+Plugin-License-Url: http://www.apache.org/licenses/LICENSE-2.0.txt
+Plugin-ScmUrl: https://github.com/jenkinsci/mapdb-api-plugin
+

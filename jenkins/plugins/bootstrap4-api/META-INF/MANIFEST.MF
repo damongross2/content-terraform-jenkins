@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.5.2
+Build-Jdk-Spec: 11
+Specification-Title: Bootstrap 4 API Plugin
+Specification-Version: 4.6
+Implementation-Title: Bootstrap 4 API Plugin
+Implementation-Version: 4.6.0-5
+Group-Id: io.jenkins.plugins
+Short-Name: bootstrap4-api
+Long-Name: Bootstrap 4 API Plugin
+Url: https://github.com/jenkinsci/bootstrap4-api-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 4.6.0-5
+Hudson-Version: 2.289.1
+Jenkins-Version: 2.289.1
+Plugin-Dependencies: font-awesome-api:6.0.0-1,jquery3-api:3.6.0-2,popper
+ -api:1.16.1-2
+Plugin-Developers: Ullrich Hafner:uhafner:ullrich.hafner@gmail.com
+Support-Dynamic-Loading: true
+Plugin-License-Name: MIT license
+Plugin-ScmUrl: https://github.com/jenkinsci/bootstrap4-api-plugin
+

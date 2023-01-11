@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Jenkins Subversion Plug-in
+Specification-Version: 2.17
+Implementation-Title: Jenkins Subversion Plug-in
+Implementation-Version: 2.17.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: subversion
+Long-Name: Jenkins Subversion Plug-in
+Url: https://github.com/jenkinsci/subversion-plugin
+Plugin-Version: 2.17.0
+Hudson-Version: 2.332.1
+Jenkins-Version: 2.332.1
+Plugin-Dependencies: workflow-scm-step:2.13,credentials:1087.v16065d2684
+ 66,mapdb-api:1.0.9.0,scm-api:602.v6a_81757a_31d2,ssh-credentials:1.19
+Plugin-Developers: Kohsuke Kawaguchi:kohsuke:,Stephen Connolly:stephenco
+ nnolly:,Oleg Nenashev:oleg_nenashev:,Andrew Bayer:abayer:,dodok1:dodok1
+ :,dty:dty:,Tom Huybrechts:huybrechts:,pgweiss:pgweiss:,rseguy:rseguy:,k
+ utzi:kutzi:,Ivan Fernandez Calvo:ifernandezcalvo:
+Plugin-License-Name: MIT license
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/subversion-plugin
+
